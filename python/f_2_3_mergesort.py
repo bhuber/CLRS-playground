@@ -16,7 +16,6 @@ def insertionsort(l, start=0, end=None, key=None):
 
 
 def _merge(l, start, mid, end, key):
-    key = key or (lambda x: x)
     left = list(l[start:mid])
     right = list(l[mid:end])
     li = 0
